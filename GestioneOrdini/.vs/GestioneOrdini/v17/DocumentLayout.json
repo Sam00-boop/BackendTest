@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,12 +47,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\OrdersController.cs",
+              "RelativeDocumentMoniker": "GestioneOrdini\\OrdersController.cs",
+              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\OrdersController.cs",
+              "RelativeToolTip": "GestioneOrdini\\OrdersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T16:00:23.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Order.cs",
               "RelativeDocumentMoniker": "GestioneOrdini\\Order.cs",
               "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Order.cs",
               "RelativeToolTip": "GestioneOrdini\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAACA//////8gwB4AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T14:36:06.188Z",
               "EditorCaption": ""
@@ -61,7 +78,7 @@
               "RelativeDocumentMoniker": "GestioneOrdini\\Program.cs",
               "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Program.cs",
               "RelativeToolTip": "GestioneOrdini\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAMzMzM3MmwBEAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAA/v////8AwBUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T14:34:29.208Z",
               "EditorCaption": ""
