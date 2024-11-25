@@ -1,0 +1,15 @@
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\bin\Debug\net8.0\GestioneOrdini.exe
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\bin\Debug\net8.0\GestioneOrdini.deps.json
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\bin\Debug\net8.0\GestioneOrdini.runtimeconfig.json
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\bin\Debug\net8.0\GestioneOrdini.dll
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\bin\Debug\net8.0\GestioneOrdini.pdb
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.GeneratedMSBuildEditorConfig.editorconfig
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.AssemblyInfoInputs.cache
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.AssemblyInfo.cs
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.csproj.CoreCompileInputs.cache
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.sourcelink.json
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.dll
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\refint\GestioneOrdini.dll
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.pdb
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\GestioneOrdini.genruntimeconfig.cache
+Z:\test\BackendTest\GestioneOrdini\GestioneOrdini\obj\Debug\net8.0\ref\GestioneOrdini.dll
