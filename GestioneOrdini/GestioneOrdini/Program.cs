@@ -7,81 +7,28 @@ namespace GestioneOrdini
         static void Main(string[] args)
         {
             
-            List<Order> elenco = new List<Order>(); // Elenco di ordini
-            bool fileLetto = false;
+            List<Order> orders = new List<Order>(); // Elenco di ordini
             OrdersController ctrl = new OrdersController();
-            string input;
+            string input; // Percorso del file CSV: ..\..\..\files\file.csv
 
-            while (!fileLetto) // Ciclo per chiedere all'utente il percorso finchè non ne da uno valido
+            while (orders.Count == 0) // Ciclo per chiedere all'utente il percorso finchè non ne da uno valido
             {
-                Console.Write("Inserire il percorso del file csv da cui leggere:");
-                input = Console.ReadLine(); // Percorso del file CSV
-                elenco = ctrl.GetOrders(input);
-                if (elenco.Count > 0)
-                    fileLetto = true;
-                foreach (Order o in elenco) 
+                Console.Write("Inserire il percorso del file csv da cui leggere:"); 
+                input = Console.ReadLine(); 
+                orders = ctrl.GetOrders(input);
+                foreach (Order o in orders) 
                     Console.WriteLine(o);
             }
 
-           
+            // Record con importo totale più alto (per importo totale sto considerando prezzoScontato*quantita)
+            Console.WriteLine($"\nRecord con importo totale più alto: \n{ctrl.MaxPrice(orders)}\n");
 
-            /*
-                try
-                {
-                    // Lettura del file CSV
-                    using (StreamReader sr = new StreamReader(input))
-                    {
-                        string riga = sr.ReadLine(); // Legge l'intestazione (prima riga)
+            // Record con quantità più alta
+            Console.WriteLine($"\nRecord con quantità più alta: \n{ctrl.MaxQuantity(orders)}\n");
 
-                        while ((riga = sr.ReadLine()) != null)
-                        {
-                            // Separa la riga corrente in un array
-                            string[] dati = riga.Split(",");
+            // Record con maggior differenza tra totale senza sconto e totale con sconto
+            Console.WriteLine($"\nRecord con maggior differenza tra totale senza sconto e totale con sconto: \n{ctrl.MaxPriceDiff(orders)}\n");
 
-                            // Creazione e inizializzazione dell'oggetto order 
-                            var ordine = new Order
-                            {
-                                Id = long.Parse(dati[0]),
-                                Article = dati[1],
-                                Quantity = long.Parse(dati[2]),
-                                Price = double.Parse(dati[3]),
-                                Discount = double.Parse(dati[4]),
-                                Buyer = dati[5]
-                            };
-
-                            // Aggiunta dell'oggetto all'elenco
-                            elenco.Add(ordine);
-
-                            Console.WriteLine(ordine);
-
-                        }
-                    }
-
-                    OrdersController ctrl = new OrdersController();
-
-                    // Record con importo totale più alto (per importo totale sto considerando prezzoScontato*quantita)
-                    Console.WriteLine($"\nRecord con importo totale più alto: {ctrl.MaxPrice(elenco)}");
-
-                    // Record con quantità più alta
-                    Console.WriteLine($"\nRecord con quantità più alta: {ctrl.MaxQuantity(elenco)}");
-
-                    // Record con maggior differenza tra totale senza sconto e totale con sconto
-                    Console.WriteLine($"\nRecord con maggior differenza tra totale senza sconto e totale con sconto: {ctrl.MaxPriceDiff(elenco)}");
-
-                    fileLetto = true;
-
-                    foreach (var article in elenco)
-                    {
-                        //Console.WriteLine(article.Price);
-                        //Console.WriteLine(article.DiscountPrice());
-                        //Console.WriteLine(article.TotalPrice());
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Errore durante la lettura del file: {ex.Message}");
-                }
-            */
         }
     }
 }

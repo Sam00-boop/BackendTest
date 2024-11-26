@@ -62,19 +62,19 @@ namespace GestioneOrdini
         }
 
 
-        public Order MaxPrice(List<Order> elenco)
+        public Order MaxPrice(List<Order> orders)
         {
-            return elenco.OrderByDescending(a => a.TotalPrice()).First();
+            return orders.OrderByDescending(a => a.TotalPrice()).First();
         }
 
-        public Order MaxQuantity(List<Order> elenco)
+        public Order MaxQuantity(List<Order> orders)
         {
-            return elenco.OrderByDescending(a => a.Quantity).First();
+            return orders.OrderByDescending(a => a.Quantity).First();
         }
 
-        public Order MaxPriceDiff(List<Order> elenco)
+        public Order MaxPriceDiff(List<Order> orders)
         {
-            return elenco.OrderByDescending(a => a.PriceDifference()).First();
+            return orders.OrderByDescending(a => a.PriceDifference()).First();
         }
     }
 }
