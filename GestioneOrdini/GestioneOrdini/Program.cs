@@ -16,8 +16,9 @@ namespace GestioneOrdini
                 Console.Write("Inserire il percorso del file csv da cui leggere:"); 
                 input = Console.ReadLine(); 
                 orders = ctrl.GetOrders(input);
-                foreach (Order o in orders) 
-                    Console.WriteLine(o);
+                // test
+                //foreach (Order o in orders) 
+                    //Console.WriteLine(o);
             }
 
             // Record con importo totale più alto (per importo totale sto considerando prezzoScontato*quantita)

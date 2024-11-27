@@ -24,20 +24,38 @@ namespace GestioneOrdini
                 // Legge il file riga per riga
                 using (StreamReader sr = new StreamReader(path))
                 {
-                    string riga = sr.ReadLine();
-                    while ((riga = sr.ReadLine()) != null)
+                    string line = sr.ReadLine();// Salta la prima riga (intestazione)
+
+                    while ((line = sr.ReadLine()) != null)
                     {
                         // Separa la riga corrente in un array
-                        string[] dati = riga.Split(",");
+                        string[] dati = line.Split(",");
 
-                        // Creazione e inizializzazione dell'oggetto order 
+                        // Controlla che la riga abbia il numero corretto di colonne
+                        if (dati.Length != 6)
+                        {
+                            Console.WriteLine($"Riga ignorata: formato non valido ({line}).");
+                            continue;
+                        }
+
+                        // Prova a convertire i dati e controlla la validità dei dati numerici
+                        if (!long.TryParse(dati[0], out var id) ||
+                            !long.TryParse(dati[2], out var quantity) ||
+                            !double.TryParse(dati[3], out var price) ||
+                            !double.TryParse(dati[4], out var discount))
+                        {
+                            Console.WriteLine($"Riga ignorata: dati non validi ({line}).");
+                            continue;
+                        }
+
+                        // Creazione e aggiunta dell'ordine
                         var ordine = new Order
                         {
-                            Id = long.Parse(dati[0]),
+                            Id = id,
                             Article = dati[1],
-                            Quantity = long.Parse(dati[2]),
-                            Price = double.Parse(dati[3]),
-                            Discount = double.Parse(dati[4]),
+                            Quantity = quantity,
+                            Price = price,
+                            Discount = discount,
                             Buyer = dati[5]
                         };
 
