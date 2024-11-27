@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "Z:\\test\\BackendTest\\GestioneOrdini\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|z:\\test\\backendtest\\gestioneordini\\gestioneordini\\files\\file.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5C372D15-A5A6-40C5-9A0E-B2F24203E6C6}|GestioneOrdini\\GestioneOrdini.csproj|solutionrelative:gestioneordini\\files\\file.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Program.cs",
+              "RelativeDocumentMoniker": "GestioneOrdini\\Program.cs",
+              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Program.cs",
+              "RelativeToolTip": "GestioneOrdini\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T14:34:29.208Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -42,28 +64,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "file.csv",
+              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\files\\file.csv",
+              "RelativeDocumentMoniker": "GestioneOrdini\\files\\file.csv",
+              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\files\\file.csv",
+              "RelativeToolTip": "GestioneOrdini\\files\\file.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-11-27T08:40:15.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Order.cs",
-              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Order.cs",
-              "RelativeDocumentMoniker": "GestioneOrdini\\Order.cs",
-              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Order.cs",
-              "RelativeToolTip": "GestioneOrdini\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\OrdersController.cs",
+              "RelativeDocumentMoniker": "GestioneOrdini\\OrdersController.cs",
+              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\OrdersController.cs",
+              "RelativeToolTip": "GestioneOrdini\\OrdersController.cs",
+              "ViewState": "AQIAAAYAAAAAZmZmZiYgwAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T14:36:06.188Z",
+              "WhenOpened": "2024-11-25T16:00:23.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Program.cs",
-              "RelativeDocumentMoniker": "GestioneOrdini\\Program.cs",
-              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Program.cs",
-              "RelativeToolTip": "GestioneOrdini\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAMzMzM3MmwBEAAAAPAAAA",
+              "Title": "Order.cs",
+              "DocumentMoniker": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Order.cs",
+              "RelativeDocumentMoniker": "GestioneOrdini\\Order.cs",
+              "ToolTip": "Z:\\test\\BackendTest\\GestioneOrdini\\GestioneOrdini\\Order.cs",
+              "RelativeToolTip": "GestioneOrdini\\Order.cs",
+              "ViewState": "AQIAABMAAAAQMzMzMzM1wCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T14:34:29.208Z",
+              "WhenOpened": "2024-11-25T14:36:06.188Z",
               "EditorCaption": ""
             }
           ]

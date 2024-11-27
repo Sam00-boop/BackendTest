@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BackendTest
+namespace GestioneOrdini
 {
     internal class Order
     {
@@ -16,16 +16,19 @@ namespace BackendTest
         public double Discount { get; set; }
         public string Buyer { get; set; }
 
+        // Metodo che torna il prezzo dell'articolo con lo sconto applicato
         public double DiscountPrice()
         {
             return Price-Price*Discount/100; 
         }
 
+        // Metodo che calcola il prezzo dell'intero ordine
         public double TotalPrice()
         {
             return Quantity * DiscountPrice();
         }
 
+        // Metodo che calcola la differenza tra il prezzo originale e quello scontato
         public double PriceDifference()
         {
             return Price - DiscountPrice();

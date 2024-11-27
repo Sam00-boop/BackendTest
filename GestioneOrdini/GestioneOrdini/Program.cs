@@ -1,4 +1,4 @@
-﻿using BackendTest;
+﻿using GestioneOrdini;
 
 namespace GestioneOrdini
 {
@@ -6,69 +6,30 @@ namespace GestioneOrdini
     {
         static void Main(string[] args)
         {
-            // Percorso del file CSV
-            Console.Write("Inserire il percorso del file csv da cui leggere:");
-            string input = Console.ReadLine();
-            //string path = @"..\..\..\files\file.csv";
+            
+            List<Order> orders = new List<Order>(); // Elenco di ordini
+            OrdersController ctrl = new OrdersController();
+            string input; // Percorso del file CSV: ..\..\..\files\file.csv
 
-            // Elenco di articoli
-            List<Order> elenco = new List<Order>();
-
-
-            try
+            while (orders.Count == 0) // Ciclo per chiedere all'utente il percorso finchè non ne da uno valido
             {
-                // Lettura del file CSV
-                using (StreamReader sr = new StreamReader(input))
-                {
-                    string riga = sr.ReadLine(); // Legge l'intestazione (prima riga)
-
-                    while ((riga = sr.ReadLine()) != null)
-                    {
-                        // Separa la riga corrente in un array
-                        string[] dati = riga.Split(",");
-
-                        // Creazione e inizializzazione dell'oggetto order 
-                        var ordine = new Order
-                        {
-                            Id = long.Parse(dati[0]),
-                            Article = dati[1],
-                            Quantity = long.Parse(dati[2]),
-                            Price = double.Parse(dati[3]),
-                            Discount = double.Parse(dati[4]),
-                            Buyer = dati[5]
-                        };
-
-                        // Aggiunta dell'oggetto all'elenco
-                        elenco.Add(ordine);
-
-                        Console.WriteLine(ordine);
-
-                    }
-                }
-
-                // Record con importo totale più alto (per importo totale sto considerando prezzoScontato*quantita)
-                var maxTotalArticle = elenco.OrderByDescending(a => a.TotalPrice()).First();
-                Console.WriteLine($"Record con importo totale più alto: {maxTotalArticle}");
-
-                // Record con quantità più alta
-                maxTotalArticle = elenco.OrderByDescending(a => a.Quantity).First();
-                Console.WriteLine($"Record con quantità più alta: {maxTotalArticle}");
-
-                // Record con maggior differenza tra totale senza sconto e totale con sconto
-                maxTotalArticle = elenco.OrderByDescending(a => a.PriceDifference()).First();
-                Console.WriteLine($"Record con maggior differenza tra totale senza sconto e totale con sconto: {maxTotalArticle}");
-
-                foreach (var article in elenco)
-                {
-                    //Console.WriteLine(article.Price);
-                    //Console.WriteLine(article.DiscountPrice());
-                    //Console.WriteLine(article.TotalPrice());
-                }
+                Console.Write("Inserire il percorso del file csv da cui leggere:"); 
+                input = Console.ReadLine(); 
+                orders = ctrl.GetOrders(input);
+                // test
+                //foreach (Order o in orders) 
+                    //Console.WriteLine(o);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Errore durante la lettura del file: {ex.Message}");
-            }
+
+            // Record con importo totale più alto (per importo totale sto considerando prezzoScontato*quantita)
+            Console.WriteLine($"\nRecord con importo totale più alto: \n{ctrl.MaxPrice(orders)}\n");
+
+            // Record con quantità più alta
+            Console.WriteLine($"\nRecord con quantità più alta: \n{ctrl.MaxQuantity(orders)}\n");
+
+            // Record con maggior differenza tra totale senza sconto e totale con sconto
+            Console.WriteLine($"\nRecord con maggior differenza tra totale senza sconto e totale con sconto: \n{ctrl.MaxPriceDiff(orders)}\n");
+
         }
     }
 }
